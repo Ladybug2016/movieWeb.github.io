@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/b1463a55e6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <nav class="nav-bar flex">
+      <div class="nav-menu flex">
+        <a href="#"
+          ><img class="nav-logo" src="images/the movie db.jpg" alt="tmdb logo"
+        /></a>
+        <ul class="nav-list flex">
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">Liked</a></li>
+        </ul>
+      </div>
+
+      <form action="" class="nav-search flex">
+        <input
+          type="text"
+          placeholder="Search..."
+          name="searchMovies"
+        /><button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+    </nav>
+
+    <!-- slider -->
+    <section class="slider-container">
+      <input id="slide-trigger1" type="radio" name="slides" checked />
+      <section class="slide slide1"></section>
+      <input id="slide-trigger2" type="radio" name="slides" />
+      <section class="slide slide2"></section>
+      <input id="slide-trigger3" type="radio" name="slides" />
+      <section class="slide slide3"></section>
+
+      <header class="slider-header">
+        <label for="slide-trigger1">1</label>
+        <label for="slide-trigger2">2</label>
+        <label for="slide-trigger3">3</label>
+      </header>
+    </section>
+
+    <!-- movie list -->
+    <main class="movies">
+      <header>The Most Popular Movies</header>
+
+      <div class="movie">
+        <img src="images/the movie db.jpg" alt="image" />
+      </div>
+
+      <div class="movie-info">
+        <header>Movie Title<span>10.0</span></header>
+        <p class="movie-overview">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quisquam
+          corrupti eius molestias praesentium voluptatum.
+        </p>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
