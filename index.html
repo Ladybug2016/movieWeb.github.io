@@ -14,25 +14,33 @@
   </head>
   <body>
     <!-- navigation bar -->
-    <nav class="nav-bar flex">
-      <div class="nav-menu flex">
-        <a href="#"
-          ><img class="nav-logo" src="images/the movie db.jpg" alt="tmdb logo"
-        /></a>
-        <ul class="nav-list flex">
-          <li><a href="#">Movies</a></li>
-          <li><a href="#">Liked</a></li>
-        </ul>
-      </div>
-
-      <form action="" class="nav-search flex">
-        <input
-          type="text"
-          placeholder="Search..."
-          name="searchMovies"
-        /><button><i class="fa-solid fa-magnifying-glass"></i></button>
-      </form>
-    </nav>
+    <div class="top-fixed flex">
+      <nav class="nav-bar flex">
+        <div class="nav-menu flex">
+          <a href="#"
+            ><img
+              class="nav-logo"
+              src="images/the movie db.jpg"
+              alt="tmdb logo"
+          /></a>
+          <ul class="nav-list flex">
+            <li>
+              <a href="#header-popular">Movies</a>
+            </li>
+            <li><a href="#">Liked</a></li>
+          </ul>
+        </div>
+        <form action="" class="nav-search flex" id="search-form">
+          <input
+            type="text"
+            placeholder="Search..."
+            name="searchMovies"
+            id="search-input"
+          /><button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+      </nav>
+      <h1>Theater at Home</h1>
+    </div>
 
     <!-- slider -->
     <section class="slider-container">
@@ -51,21 +59,22 @@
     </section>
 
     <!-- movie list -->
-    <main class="movies">
-      <header>The Most Popular Movies</header>
+    <h2 id="header-popular">The Most Popular Movies</h2>
+    <main id="movie-list"></main>
 
-      <div class="movie">
-        <img src="images/the movie db.jpg" alt="image" />
-      </div>
+    <!-- pagination -->
+    <nav id="pagination" class="flex">
+      <button id="pagination-pre" href="#">
+        <i class="fa-solid fa-angle-left"></i>
+      </button>
+      <button id="pagination-curr">1</button>
+      <button id="pagination-next">
+        <i class="fa-solid fa-angle-right"></i>
+      </button>
+    </nav>
 
-      <div class="movie-info">
-        <header>Movie Title<span>10.0</span></header>
-        <p class="movie-overview">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quisquam
-          corrupti eius molestias praesentium voluptatum.
-        </p>
-      </div>
-    </main>
+    <!-- movie details shown as click on movie image -->
+    <section id="movie-detail"></section>
 
     <script src="js/script.js"></script>
   </body>
