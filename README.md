@@ -1,1 +1,6 @@
-# movieWeb.github.io![ezgif com-gif-maker](https://user-images.githubusercontent.com/103582183/163845500-80c17473-e635-4675-87d3-7404ac568a75.gif)
+# MovieCards
+# ![ezgif com-gif-maker](https://user-images.githubusercontent.com/103582183/163845846-7275a42d-2a62-41f6-8640-742745c9f142.gif)
+# Accesses The Movie Database (TMDb) API
+# Display the most popular Movies 
+# View detailed movie infromation
+# Search by keywords
